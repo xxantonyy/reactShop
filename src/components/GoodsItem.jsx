@@ -10,7 +10,7 @@ export function GoodsItem (props) {
 
    return  <div className="card" id={id}>
    <div className="card-image waves-effect waves-block waves-light">
-     <img src={full_background} alt={name} />
+      <img src={full_background} onError={(e) => {e.target.onerror = null; e.target.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1XgYqDRgPAJ8oAk-qVieeGK5R4YPNip8yaSHwdw35eSzCXa9FxWcZkSAW-aGZ-gkbLIU&usqp=CAU'}} alt={name} />
    </div>
    <div className="card-content">
      <span className="card__use card-title activator grey-text text-darken-4">{name}</span>
